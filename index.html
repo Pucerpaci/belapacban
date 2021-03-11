@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menü hidden">
+      <button class="btn-menü-kezdő btn-menü">Kezdőlap</button>
+      <button class="btn-menü-első btn-menü hidden">1. feladat</button>
+      <button class="btn-menü-második btn-menü hidden">2. feladat</button>
+      <button class="btn-menü-harmadik btn-menü hidden">3. feladat</button>
+    </div>
+       
+      <div class="bevezető">
+        
+        
+        <div>
+          <h1>IV. Béla pácban</h1>
+          <p>
+            1241-et írunk, a tatár seregek megérkeztek Magyarországra. IV. Béla
+            magyar király úgy dönt, hogy Muhinál próbálja megállítani őket, ám a
+            csata rosszul alakul, a királynak menekülnie kell egy előre
+            megtervezett útvonalon! Az útvonal minden állomásán élelem és egy
+            friss ló várja, hogy minél gyorsabban haladhasson. Helyzetét
+            nehezíti, hogy az útvonalat megtervező hadvezére elesett a csatában,
+            de nincs minden veszve, mert hagyott maga után jeleket, amiket
+            helyesen értelmezve segíthetsz a királynak, hogy merre kell mennie!
+          </p>
+          <!-- <form method="get" action="/összes.html"> -->
+            <button class="btn-kezdés">Játék kezdése</button>
+          <!-- </form> -->
+          <p>
+              Tudnivalók a játékról: <br>
+              <br>
+              - Összesen 6 feldatot kell megoldani, hogy a király megmeneküljön. <br>
+              <br>
+              - Ha elakadnátok, minden feladathoz tartozik segítség, amit a lap alján találtok.
+          </p>
+          
+        </div>
+      </div>
+  
+
+
+    
+        <div class="első hidden">
+          
+            <div class="feladat1">
+                <div class="szöveg1">
+                    <p>
+                      A csata eldőlt, a tatárok bekerítették a magyarok szekértáborát. A tatár csapatok elhelyezkedését figyelembe véve határozd meg a három legígéretesebb kitörési pontot, a király majd eldönti, hogy melyiket választja!</p>
+                  </div>
+                  <div class="szekértábor">
+                    <div class="teljeskép">
+                      <button class="btn-teljeskép-szekér btn-teljeskép" onclick="openFullscreen();">Teljes képernyő</button>
+                    </div>
+                      <img class="szekérkép" src="szekértábor.png" alt="" />
+                  </div>
+                    
+            
+                  <div class="megoldás1">
+                    <p class="beszéd">Ide írd a három legígéretesebb kitörési pontot szóközzel elválasztva!</p>
+                    <input id="válasz" type="text" placeholder="Kitörési pontok" />
+                    <br>
+                    <br>
+                    <button
+                      class="btn-ellenőrzés-első btn-ellenőrzés"
+                    >
+                      Ellenőrzés
+                    </button>
+                    <div class="helyes hidden">
+                      <p>A király és kísérete sikeresen kitört a szekértáborból!</p>
+                      <button class="btn-tovább-első btn-tovább">Tovább</button>
+                    </div>
+                      
+                      <div class="helytelen hidden">
+                        <p>Egyelőre nem sikerült kitörni a szekértáborból!</p>
+                      </div>
+                    </div>
+            
+                  
+                  <!-- <div>
+                    <button class="show-modal">Merre jár a király?</button>
+                    <div class="modal hidden">
+                      <button class="close-modal">&times;</button>
+                      <img class="királyikép" src="térkép.png" alt="" />
+                    </div> -->
+                    
+
+            </div>
+               
+            <div class="feladat12">
+                <img src="képletek.png" alt="" />
+              </div>
+              
+                  <div class="segítségbox">
+                    <button class="btn-segítség1 btn-segítség">Segítség 1</button>
+                    <button class="btn-segítség2 btn-segítség">Segítség 2</button>
+                    <button class="btn-segítség3 btn-segítség">Segítség 3</button>
+                    <div class="segítség1 segítség hidden">
+                      <button class="close-segítség1 close-segítség">&times;</button>
+                      <h1>Segítség 1</h1>
+                      <p class="modalleír">Először a kék egységek értékét számold ki a sárga-kék és a sárga+kék képletekből.</p>
+                    </div>
+                    <div class="segítség2 segítség hidden">
+                      <button class="close-segítség2 close-segítség">&times;</button>
+                      <h1>Segítség 2</h1>
+                      <p class="modalleír">Sárga-kék=0,5, vagyis a sárga egységek 0,5-el nagyobbak, mint a kékek. Sárga+kék=3,5 -> 3,5-0,5=3 -> 3/2=1,5. A kék egységek értéke tehát 1,5.</p>
+                    </div>
+                    <div class="segítség3 segítség hidden">
+                      <button class="close-segítség3 close-segítség">&times;</button>
+                      <h1>Segítség 3</h1>
+                      <p class="modalleír">Számold össze a szekértábor egyes elemeinél található tatár egységek értékét.</p>
+                    </div>
+        
+              </div>
+              
+              
+              <div class="overlay hidden"></div>
+              
+            
+    
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>  
+    
+      
+          
+    <div class="második hidden">
+          
+      <div class="feladat2">
+          <div class="szöveg2">
+              <p>
+                A királynak sikerült a Bükkig eljutni, de nem nyugodhat meg, a tatárok a nyomában vannnak. Friss lóra lenne szüksége, de senki sem tudja, hogy pontosan hol van a váltópont!
+              </p>
+              <!-- <p>
+                Ɔ"IIIV.IIIIVXXX'IIXXX°XX Ɔ"IIII.IIIVX'IVX°IIIVXXXX
+              </p> -->
+            </div>
+            <div class="rovás">
+              <div class="teljeskép-rovás">
+                <button class="btn-teljeskép-rovás btn-teljeskép" onclick="openFullscreen2();">Teljes képernyő</button>
+              </div>
+                <img class="rováskép" src="rovás3.png" alt="" />
+            </div>
+              
+      
+            <div class="megoldás2">
+              <p class="beszéd2">Ide írd a következő megállót, figyelj a kis- és nagybetűkre!</p>
+              <input id="válasz2" type="text" placeholder="Következő megálló" />
+              <br>
+              <br>
+              <button
+                class="btn-ellenőrzés-második btn-ellenőrzés"
+              >
+                Ellenőrzés
+              </button>
+              <div class="helyes2 hidden">
+                <p>Irány Vadna (vagy valami más)!</p>
+                <button class="btn-tovább-második btn-tovább">Tovább</button>
+              </div>
+                
+                <div class="helytelen2 hidden">
+                  <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+                </div>
+              </div>
+      
+            
+            <!-- <div>
+              <button class="show-modal">Merre jár a király?</button>
+              <div class="modal hidden">
+                <button class="close-modal">&times;</button>
+                <img class="királyikép" src="térkép.png" alt="" />
+              </div> -->
+              
+
+      </div>
+        
+            <div class="segítségbox">
+              <button class="btn-segítség4 btn-segítség">Segítség 1</button>
+              <button class="btn-segítség5 btn-segítség">Segítség 2</button>
+              <button class="btn-segítség6 btn-segítség">Segítség 3</button>
+              <div class="segítség4 segítség hidden">
+                <button class="close-segítség4 close-segítség">&times;</button>
+                <h1>Segítség 1</h1>
+                <p class="modalleír">A kódot székely-magyar rovásírással írták.</p>
+              </div>
+              <div class="segítség5 segítség hidden">
+                <button class="close-segítség5 close-segítség">&times;</button>
+                <h1>Segítség 2</h1>
+                <p class="modalleír">A rovásírást jobbról balra kell olvasni. IIIXX = 23, IVXXXX = 46</p>
+              </div>
+              <div class="segítség6 segítség hidden">
+                <button class="close-segítség6 close-segítség">&times;</button>
+                <h1>Segítség 3</h1>
+                <p class="modalleír">A helyes kód: 48°16'18.4"N 20°32'39.8"E Keress rá a Google-ban!</p>
+              </div>
+  
+        </div>
+        
+        
+        <div class="overlay hidden"></div>
+        
+      
+
+         
+            </div>
+          </div>
+        </div>
+      </div>
+</div>  
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

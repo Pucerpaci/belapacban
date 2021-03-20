@@ -13,8 +13,19 @@
       <button class="btn-menü-első btn-menü hidden">1. feladat</button>
       <button class="btn-menü-második btn-menü hidden">2. feladat</button>
       <button class="btn-menü-harmadik btn-menü hidden">3. feladat</button>
+      <button class="btn-menü-negyedik btn-menü hidden">4. feladat</button>
+      <button class="btn-menü-ötödik btn-menü hidden">5. feladat</button>
+      <button class="btn-menü-hatodik btn-menü hidden">6. feladat</button>
+      <button class="btn-merrekirály btn-menü">Merre jár a király? ⚔</button>
     </div>
-       
+    
+    <div class="merrekirály hidden">
+      <button class="close-merrekirály close-segítség">&times;</button>
+      <h1 class="merrecím">Muhi</h1>
+      <p class="merrekirályleír modalleír">A terület az őskortól lakott. A 13. században két település állt itt, Muhi mezőváros és Poga falu. 1241-ben itt zajlott a muhi csata, amelyben a tatárok legyőzték IV. Béla seregeit. A település megsemmisült, a 14. századra települt be újra. Eger eleste és a mezőkeresztesi csata után újra pusztává vált. Az országos jelentőségű útvonal mentén fekvő Muhi a 14. század óta a diósgyőri uradalom része, a 16. század elejéig királynéi birtok. II. Lajos 1520-ban engedélyezte, hogy a településen két országos vásárt tartsanak. Török puszítások 1526-ban, 1541-ben és 1583-ban is sújtják a falut. 1596 után a település elpusztul. A diósgyőri uradalom Muhi földjeit majorságnak használják. Poga a 18. században újra benépesült, 1928-ban pedig átnevezték Muhira.</p>
+      <img id="merrekép" src="merre1.jpg" alt="">
+    </div>
+
       <div class="bevezető">
         
         
@@ -58,7 +69,7 @@
                     <div class="teljeskép">
                       <button class="btn-teljeskép-szekér btn-teljeskép" onclick="openFullscreen();">Teljes képernyő</button>
                     </div>
-                      <img class="szekérkép" src="szekértábor.JPG" alt="" />
+                      <img class="szekérkép" src="szekértábor.jpg" alt="" />
                   </div>
                     
             
@@ -94,7 +105,13 @@
             </div>
                
             <div class="feladat12">
-                <img src="képletek2.JPG" alt="" />
+                <img src="képletek2.jpg" alt="" />
+                <br>
+                <br>
+                <p>
+                  A = 1, Á = 0, É = 6, I = 9, M = 8, N = 7, O = 5, R = 2, U = 4, Z = 3
+                </p>
+                <br>
               </div>
               
                   <div class="segítségbox">
@@ -109,7 +126,7 @@
                     <div class="segítség2 segítség hidden">
                       <button class="close-segítség2 close-segítség">&times;</button>
                       <h1>Segítség 2</h1>
-                      <p class="modalleír">Sárga-kék=0,5, vagyis a sárga egységek 0,5-el nagyobbak, mint a kékek. Sárga+kék=3,5 -> 3,5-0,5=3 -> 3/2=1,5. A kék egységek értéke tehát 1,5.</p>
+                      <p class="modalleír">2sárga-2kék=0,5, vagyis a sárga egységek 0,5-el nagyobbak, mint a kékek. Sárga+kék=3,7 -> 3,7-0,5=3,2 -> 3,2/2=1,6. A kék egységek értéke tehát 1,6.</p>
                     </div>
                     <div class="segítség3 segítség hidden">
                       <button class="close-segítség3 close-segítség">&times;</button>
@@ -138,23 +155,21 @@
       <div class="feladat2">
           <div class="szöveg2">
               <p>
-                A királynak sikerült a Bükkig eljutni, de nem nyugodhat meg, a tatárok a nyomában vannnak. Friss lóra lenne szüksége, de senki sem tudja, hogy pontosan hol van a váltópont!
+                A királynak sikerült Bélapátfalvára eljutni, de nem nyugodhat meg, a tatárok a nyomában vannak. Tovább kell mennie a következő váltópontra, de senki sem tudja, hogy az pontosan hol van!
               </p>
-              <!-- <p>
-                Ɔ"IIIV.IIIIVXXX'IIXXX°XX Ɔ"IIII.IIIVX'IVX°IIIVXXXX
-              </p> -->
             </div>
+            <div class="feladatmegold">
             <div class="rovás">
               <div class="teljeskép-rovás">
                 <button class="btn-teljeskép-rovás btn-teljeskép" onclick="openFullscreen2();">Teljes képernyő</button>
               </div>
-                <img class="rováskép" src="rovás3.JPG" alt="" />
+                <img class="rováskép" src="rovás4.jpg" alt="" />
             </div>
               
       
             <div class="megoldás2">
-              <p class="beszéd2">Ide írd a következő megállót, figyelj a kis- és nagybetűkre!</p>
-              <input id="válasz2" type="text" placeholder="Következő megálló" />
+              <p class="beszéd2">Ide írd a következő települést, figyelj a kis- és nagybetűkre!</p>
+              <input id="válasz2" type="text" placeholder="Következő település" />
               <br>
               <br>
               <button
@@ -163,7 +178,7 @@
                 Ellenőrzés
               </button>
               <div class="helyes2 hidden">
-                <p>Irány Vadna (vagy valami más)!</p>
+                <p>Irány Fülek!</p>
                 <button class="btn-tovább-második btn-tovább">Tovább</button>
               </div>
                 
@@ -171,6 +186,7 @@
                   <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
                 </div>
               </div>
+            </div>
       
             
             <!-- <div>
@@ -195,12 +211,12 @@
               <div class="segítség5 segítség hidden">
                 <button class="close-segítség5 close-segítség">&times;</button>
                 <h1>Segítség 2</h1>
-                <p class="modalleír">A rovásírást jobbról balra kell olvasni. IIIXX = 23, IVXXXX = 46</p>
+                <p class="modalleír">A rovásírást jobbról balra kell olvasni.</p>
               </div>
               <div class="segítség6 segítség hidden">
                 <button class="close-segítség6 close-segítség">&times;</button>
                 <h1>Segítség 3</h1>
-                <p class="modalleír">A helyes kód: 48°16'18.4"N 20°32'39.8"E Keress rá a Google-ban!</p>
+                <p class="modalleír">A szöveg latin átírásban a következő: északnyugat felé rablólovag fulkó</p>
               </div>
   
         </div>
@@ -215,9 +231,288 @@
           </div>
         </div>
       </div>
+</div>
+
+
+
+
+<div class="harmadik hidden">
+          
+  <div class="feladat3">
+      <div class="szöveg3">
+          <p>
+            IV. Béla megérkezett Fülekre, de nem tudja, hogy merre induljon tovább, segíts neki!
+          </p>
+          <div class="nevek">
+              <img src="nevek.jpg" alt="">
+          </div>
+        </div>
+        <div class="feladatmegold">
+          <div class="krejtvény1">
+            <img src="keresztrejtvény.jpg" alt="" />
+          </div>
+            
+    
+          <div class="megoldás3">
+            <p class="beszéd3">Ide írd a megfejtést, ami elvezet a következő településig!</p>
+            <input id="válasz3" type="text" placeholder="Megfejtés" />
+            <br>
+            <br>
+            <button
+              class="btn-ellenőrzés-harmadik btn-ellenőrzés"
+            >
+              Ellenőrzés
+            </button>
+            <div class="helyes3 hidden">
+              <p>Helyes megoldás, irány Murány vára!</p>
+              <button class="btn-tovább-harmadik btn-tovább">Tovább</button>
+            </div>
+              
+              <div class="helytelen3 hidden">
+                <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+              </div>
+            </div>
+        </div>
+        
+  
+        
+        <!-- <div>
+          <button class="show-modal">Merre jár a király?</button>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <img class="királyikép" src="térkép.png" alt="" />
+          </div> -->
+          
+
+  </div>
+    
+        <div class="segítségbox">
+          <button class="btn-segítség7 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség8 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség9 btn-segítség">Segítség 3</button>
+          <div class="segítség7 segítség hidden">
+            <button class="close-segítség7 close-segítség">&times;</button>
+            <h1>Segítség 1</h1>
+            <p class="modalleír">Az anagrammák neveket rejtenek.</p>
+          </div>
+          <div class="segítség8 segítség hidden">
+            <button class="close-segítség8 close-segítség">&times;</button>
+            <h1>Segítség 2</h1>
+            <p class="modalleír">Keresd a IV. Bélához köthető személyeket.</p>
+          </div>
+          <div class="segítség9 segítség hidden">
+            <button class="close-segítség9 close-segítség">&times;</button>
+            <h1>Segítség 3</h1>
+            <p class="modalleír">Használd az első feladatnál megadott kódokat!</p>
+          </div>
+
+    </div>
+    
+    
+    <div class="overlay hidden"></div>
+    
+  
+
+     
+        </div>
+      </div>
+    </div>
+  </div>
 </div>  
 
 
+
+
+<div class="negyedik hidden">
+          
+  <div class="feladat4">
+    <button class="btn-zenebeidősor1">🔊</button>
+      <div class="szöveg4">
+          <p>
+            IV. Béla megérkezett Murány várához, ám akadt egy kis problémája, a várúr jelszó nélkül nem akarja beengedni.
+          </p>
+          <div class="idősor">
+            <img id="idősorkep" src="idősorfelad.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="feladatmegold">
+
+          <div class="megoldás4">
+            <p class="beszéd4">Ide írd a megfejtést, figyelj a szóközökre!</p>
+            <input id="válasz4" type="text" placeholder="Megfejtés" />
+            <br>
+            <br>
+            <button
+              class="btn-ellenőrzés-negyedik btn-ellenőrzés"
+            >
+              Ellenőrzés
+            </button>
+            <div class="helyes4 hidden">
+              <p>Helyes sorrend!</p>
+              <button class="btn-tovább-negyedik btn-tovább">Tovább</button>
+            </div>
+              
+              <div class="helytelen4 hidden">
+                <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+              </div>
+            </div>
+
+            <div class="megoldás42 hidden">
+              <button class="btn-zenebeidősor1">🔊</button>
+              <p class="beszéd42">Ide írd a jelszót!</p>
+              <input id="válasz42" type="text" placeholder="Jelszó" />
+              <br>
+              <br>
+              <button
+                class="btn-ellenőrzés-negyedik2 btn-ellenőrzés"
+              >
+                Ellenőrzés
+              </button>
+              <div class="helyes42 hidden">
+                <p>Helyes jelszó!</p>
+                <button class="btn-tovább-negyedik2 btn-tovább">Tovább</button>
+              </div>
+                
+                <div class="helytelen42 hidden">
+                  <p>Rossz jelszó! Mik vagytok ti tatárok?!</p>
+                </div>
+              </div>
+        </div>
+        
+  
+        
+        <!-- <div>
+          <button class="show-modal">Merre jár a király?</button>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <img class="királyikép" src="térkép.png" alt="" />
+          </div> -->
+          
+
+  </div>
+    
+        <div class="segítségbox">
+          <button class="btn-segítség7 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség8 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség9 btn-segítség">Segítség 3</button>
+          <div class="segítség7 segítség hidden">
+            <button class="close-segítség7 close-segítség">&times;</button>
+            <h1>Segítség 1</h1>
+            <p class="modalleír">Az anagrammák neveket rejtenek.</p>
+          </div>
+          <div class="segítség8 segítség hidden">
+            <button class="close-segítség8 close-segítség">&times;</button>
+            <h1>Segítség 2</h1>
+            <p class="modalleír">Keresd a IV. Bélához köthető személyeket.</p>
+          </div>
+          <div class="segítség9 segítség hidden">
+            <button class="close-segítség9 close-segítség">&times;</button>
+            <h1>Segítség 3</h1>
+            <p class="modalleír">Használd az első feladatnál megadott kódokat!</p>
+          </div>
+
+    </div>
+    
+    
+    <div class="overlay hidden"></div>
+    
+  
+
+     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+
+<div class="ötödik hidden">
+          
+  <div class="feladat5">
+      <div class="szöveg5">
+          <p>
+            Murány vára nagyon masszív, de a tatár felderítők megtudták, hogy a király itt tartózkodik! IV. Béla nem akar kockáztatni és tovább szeretne idnulni. A következő megállóhoz az alábbi 6 térkép nyújt információt.
+          </p>
+          <div class="puzzle">
+            <iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=00a1639c3ae5&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="feladatmegold">
+
+          <div class="megoldás5">
+            <p class="beszéd5">Ide írd a megfejtést, ami elvezet a következő településig!</p>
+            <input id="válasz5" type="text" placeholder="Megfejtés" />
+            <br>
+            <br>
+            <button
+              class="btn-ellenőrzés-ötödik btn-ellenőrzés"
+            >
+              Ellenőrzés
+            </button>
+            <div class="helyes5 hidden">
+              <p>Helyes megoldás, irány Murány vára!</p>
+              <button class="btn-tovább-ötödik btn-tovább">Tovább</button>
+            </div>
+              
+              <div class="helytelen5 hidden">
+                <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+              </div>
+            </div>
+        </div>
+        
+  
+        
+        <!-- <div>
+          <button class="show-modal">Merre jár a király?</button>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <img class="királyikép" src="térkép.png" alt="" />
+          </div> -->
+          
+
+  </div>
+    
+        <div class="segítségbox">
+          <button class="btn-segítség7 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség8 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség9 btn-segítség">Segítség 3</button>
+          <div class="segítség7 segítség hidden">
+            <button class="close-segítség7 close-segítség">&times;</button>
+            <h1>Segítség 1</h1>
+            <p class="modalleír">Az anagrammák neveket rejtenek.</p>
+          </div>
+          <div class="segítség8 segítség hidden">
+            <button class="close-segítség8 close-segítség">&times;</button>
+            <h1>Segítség 2</h1>
+            <p class="modalleír">Keresd a IV. Bélához köthető személyeket.</p>
+          </div>
+          <div class="segítség9 segítség hidden">
+            <button class="close-segítség9 close-segítség">&times;</button>
+            <h1>Segítség 3</h1>
+            <p class="modalleír">Használd az első feladatnál megadott kódokat!</p>
+          </div>
+
+    </div>
+    
+    
+    <div class="overlay hidden"></div>
+    
+  
+
+     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+
+<audio id="murany1" src="murany1.mp3">
+<audio id="murany2" src="murany2.mp3">
 
     <script src="script.js"></script>
   </body>

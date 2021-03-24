@@ -55,6 +55,16 @@ body {
   font-size: 10px;
 }
 
+.btn-kulcs {
+  background-color: rgba(6, 38, 78, 0.8);
+  color: whitesmoke;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+}
+
 .btn-menü {
   background-color: rgba(66, 131, 20, 0.8);
   color: whitesmoke;
@@ -91,9 +101,15 @@ body {
   border: none;
   text-align: center;
   height: 30px;
-  width: 200px;
+  width: 220px;
   font-size: 20px;
   margin-left: 10%;
+}
+
+.btn-zenebeidősor {
+  background-color: rgba(6, 38, 78, 0.8);
+  color: whitesmoke;
+  border: none;
 }
 
 .első {
@@ -136,45 +152,91 @@ body {
   background-size: cover;
 }
 
+.ötödik {
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 22px;
+  color: whitesmoke;
+  opacity: 0.9;
+  background-image: url(tatárok.jpg);
+  background-size: cover;
+}
+
+.hatodik {
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 22px;
+  color: whitesmoke;
+  opacity: 0.9;
+  background-image: url(tatárok5.jpg);
+  background-size: cover;
+}
+
 .feladat1 {
   display: flex;
   padding-top: 1%;
   background-color: rgb(99, 79, 79);
   padding-left: 2%;
+  padding-right: 2%;
   opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 
 .feladat2 {
   padding-top: 1%;
   background-color: rgb(99, 79, 79);
   padding-left: 2%;
+  padding-right: 2%;
   opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 
 .feladat3 {
   padding-top: 1%;
   background-color: rgb(99, 79, 79);
   padding-left: 2%;
+  padding-right: 2%;
   opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 
 .feladat4 {
   padding-top: 1%;
   background-color: rgb(99, 79, 79);
   padding-left: 2%;
+  padding-right: 2%;
   opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
+
+.feladat5 {
+  padding-top: 1%;
+  background-color: rgb(99, 79, 79);
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity: 0.9;
+  /* flex-wrap: row nowrap; */
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
+
+.feladat6 {
+  padding-top: 1%;
+  background-color: rgb(99, 79, 79);
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity: 0.9;
+  /* flex-wrap: row nowrap; */
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 
 .teljeskép {
@@ -205,8 +267,8 @@ body {
   padding-left: 2%;
   opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
   text-align: center;
 }
 
@@ -230,15 +292,20 @@ body {
 }
 
 .segítségbox {
-  /* background-color: rgb(99, 79, 79); */
+  background-color: rgb(99, 79, 79);
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
-  /* opacity: 0.9; */
+  opacity: 0.9;
   /* flex-wrap: row nowrap; */
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%;
+  margin-right: 5%; */
   text-align: center;
+}
+
+#kód {
+  height: 25px;
+  width: 190px;
 }
 
 #válasz {
@@ -247,6 +314,31 @@ body {
 }
 
 #válasz2 {
+  height: 25px;
+  width: 190px;
+}
+
+#válasz3 {
+  height: 25px;
+  width: 190px;
+}
+
+#válasz4 {
+  height: 25px;
+  width: 190px;
+}
+
+#válasz42 {
+  height: 25px;
+  width: 190px;
+}
+
+#válasz5 {
+  height: 25px;
+  width: 190px;
+}
+
+#válasz6 {
   height: 25px;
   width: 190px;
 }
@@ -273,18 +365,19 @@ body {
   z-index: 10;
 }
 
-.térkép1 {
-  position: relative;
-  top: 5%;
-  left: 50%;
+.kulcskép {
+  position: fixed;
+  text-align: center;
+  top: 6%;
+  left: 25%;
   /* transform: translate(-50%, -50%); */
   width: 50%;
   color: rgba(0, 0, 0, 1);
   background-color: white;
-  /* padding: 6rem;
-    border-radius: 5px; */
-  /* box-shadow: 0 rgba(0, 0, 0, 1); */
-  /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
+  /* padding: 6rem; */
+  border-radius: 5px;
+  /* box-shadow: 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
   z-index: 10;
 }
 
@@ -311,14 +404,15 @@ body {
 
 .merrekirály {
   position: fixed;
+  text-align: center;
   top: 6%;
   left: 3%;
   /* transform: translate(-50%, -50%); */
   width: 50%;
   color: rgba(0, 0, 0, 1);
-  background-color: white;
-  /* padding: 6rem;
-    border-radius: 5px; */
+  background-color: rgb(235, 227, 227);
+  /* padding: 6rem; */
+  border-radius: 5px;
   /* box-shadow: 0 rgba(0, 0, 0, 1); */
   /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
   z-index: 10;
@@ -326,6 +420,10 @@ body {
 
 .feladatmegold {
   display: flex;
+}
+
+.feladatmegoldnemflex {
+  text-align: center;
 }
 
 .nevek {
@@ -365,4 +463,25 @@ body {
 .button-kép6 {
   background-image: url(kép6.jpg);
   background-size: cover;
+}
+
+.kulcs {
+  text-align: center;
+}
+
+.kiadások {
+  text-align: center;
+  font-size: 26px;
+}
+
+.vége {
+  text-align: center;
+  color: whitesmoke;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.footer {
+  text-align: center;
+  color: whitesmoke;
 }

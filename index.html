@@ -16,7 +16,7 @@
       <button class="btn-menü-negyedik btn-menü hidden">4. feladat</button>
       <button class="btn-menü-ötödik btn-menü hidden">5. feladat</button>
       <button class="btn-menü-hatodik btn-menü hidden">6. feladat</button>
-      <button class="btn-merrekirály btn-menü">Merre jár a király? ⚔</button>
+      <button class="btn-merrekirály btn-menü">Merre jár a király? 👑</button>
     </div>
     
     <div class="merrekirály hidden">
@@ -41,9 +41,13 @@
             de nincs minden veszve, mert hagyott maga után jeleket, amiket
             helyesen értelmezve segíthetsz a királynak, hogy merre kell mennie!
           </p>
-          <!-- <form method="get" action="/összes.html"> -->
+          
+            <p>Kód megadása a kezdéshez:</p>
+            <input id="kód" type="text" placeholder="Kód" />
+            <br>
+            <br>
             <button class="btn-kezdés">Játék kezdése</button>
-          <!-- </form> -->
+    
           <p>
               Tudnivalók a játékról: <br>
               <br>
@@ -51,6 +55,10 @@
               <br>
               - Ha elakadnátok, minden feladathoz tartozik segítség, amit a lap alján találtok.
           </p>
+          <p>
+            Már elfelejtettétek, hogy mi történt Muhinál? Nézzétek meg az alábbi videót!
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xB30ompj5Wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           
         </div>
       </div>
@@ -326,7 +334,10 @@
 <div class="negyedik hidden">
           
   <div class="feladat4">
-    <button class="btn-zenebeidősor1">🔊</button>
+    <button class="btn-zenebeidősor1 btn-zenebeidősor">Lejátszás újra 🔊</button>
+    <div>
+      <p>Vedd fel a trubadúrládád hangerejét!</p>
+    </div>
       <div class="szöveg4">
           <p>
             IV. Béla megérkezett Murány várához, ám akadt egy kis problémája, a várúr jelszó nélkül nem akarja beengedni.
@@ -336,7 +347,7 @@
           </div>
         </div>
 
-        <div class="feladatmegold">
+        <div class="feladatmegoldnemflex">
 
           <div class="megoldás4">
             <p class="beszéd4">Ide írd a megfejtést, figyelj a szóközökre!</p>
@@ -350,16 +361,15 @@
             </button>
             <div class="helyes4 hidden">
               <p>Helyes sorrend!</p>
-              <button class="btn-tovább-negyedik btn-tovább">Tovább</button>
             </div>
               
               <div class="helytelen4 hidden">
-                <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+                <p>Egyelőre nem sikerült megfejteni a helyes sorrendet!</p>
               </div>
             </div>
 
             <div class="megoldás42 hidden">
-              <button class="btn-zenebeidősor1">🔊</button>
+              <button class="btn-zenebeidősor2 btn-zenebeidősor">Lejátszás újra 🔊</button>
               <p class="beszéd42">Ide írd a jelszót!</p>
               <input id="válasz42" type="text" placeholder="Jelszó" />
               <br>
@@ -393,23 +403,23 @@
   </div>
     
         <div class="segítségbox">
-          <button class="btn-segítség7 btn-segítség">Segítség 1</button>
-          <button class="btn-segítség8 btn-segítség">Segítség 2</button>
-          <button class="btn-segítség9 btn-segítség">Segítség 3</button>
-          <div class="segítség7 segítség hidden">
-            <button class="close-segítség7 close-segítség">&times;</button>
+          <button class="btn-segítség10 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség11 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség12 btn-segítség">Segítség 3</button>
+          <div class="segítség10 segítség hidden">
+            <button class="close-segítség10 close-segítség">&times;</button>
             <h1>Segítség 1</h1>
-            <p class="modalleír">Az anagrammák neveket rejtenek.</p>
+            <p class="modalleír">A helyes sorrend: 5 7 6 9 2 4 10 1 3 8</p>
           </div>
-          <div class="segítség8 segítség hidden">
-            <button class="close-segítség8 close-segítség">&times;</button>
+          <div class="segítség11 segítség hidden">
+            <button class="close-segítség11 close-segítség">&times;</button>
             <h1>Segítség 2</h1>
-            <p class="modalleír">Keresd a IV. Bélához köthető személyeket.</p>
+            <p class="modalleír">Koppány lázadása: 998, Aranybulla: 1222, Kötöny befogadása: 1239</p>
           </div>
-          <div class="segítség9 segítség hidden">
-            <button class="close-segítség9 close-segítség">&times;</button>
+          <div class="segítség12 segítség hidden">
+            <button class="close-segítség12 close-segítség">&times;</button>
             <h1>Segítség 3</h1>
-            <p class="modalleír">Használd az első feladatnál megadott kódokat!</p>
+            <p class="modalleír">1239-998=241 -> 2+4+1=7 -> 1222-7=1215</p>
           </div>
 
     </div>
@@ -433,7 +443,7 @@
   <div class="feladat5">
       <div class="szöveg5">
           <p>
-            Murány vára nagyon masszív, de a tatár felderítők megtudták, hogy a király itt tartózkodik! IV. Béla nem akar kockáztatni és tovább szeretne idnulni. A következő megállóhoz az alábbi 6 térkép nyújt információt.
+            Murány várából idő előtt távoznia kellett a királynak, mert tatár seregek érkezéséről kapott jelentést, ezért megindult Besztercebánya felé. Tovább bonyolítja helyzetét, hogy útközben az eredeti útirányán is változtatnia kell a barbár hordák miatt. Nagy a bizonytalanság, de hátha ti biztonságos helyre tudjátok vezetni IV. Bélát.
           </p>
           <div class="puzzle">
             <iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=00a1639c3ae5&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>
@@ -443,8 +453,8 @@
         <div class="feladatmegold">
 
           <div class="megoldás5">
-            <p class="beszéd5">Ide írd a megfejtést, ami elvezet a következő településig!</p>
-            <input id="válasz5" type="text" placeholder="Megfejtés" />
+            <p class="beszéd5">Ide írd a következő települést!</p>
+            <input id="válasz5" type="text" placeholder="Település" />
             <br>
             <br>
             <button
@@ -453,7 +463,7 @@
               Ellenőrzés
             </button>
             <div class="helyes5 hidden">
-              <p>Helyes megoldás, irány Murány vára!</p>
+              <p>Helyes megoldás, vár Liptóújvár!</p>
               <button class="btn-tovább-ötödik btn-tovább">Tovább</button>
             </div>
               
@@ -476,23 +486,23 @@
   </div>
     
         <div class="segítségbox">
-          <button class="btn-segítség7 btn-segítség">Segítség 1</button>
-          <button class="btn-segítség8 btn-segítség">Segítség 2</button>
-          <button class="btn-segítség9 btn-segítség">Segítség 3</button>
-          <div class="segítség7 segítség hidden">
-            <button class="close-segítség7 close-segítség">&times;</button>
+          <button class="btn-segítség13 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség14 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség15 btn-segítség">Segítség 3</button>
+          <div class="segítség13 segítség hidden">
+            <button class="close-segítség13 close-segítség">&times;</button>
             <h1>Segítség 1</h1>
-            <p class="modalleír">Az anagrammák neveket rejtenek.</p>
+            <p class="modalleír">A pirossal jelzett betűk a következő szöveget adják ki: Menedék legközelebb ott vár, hol a Belá és a Vág egybefolyik.</p>
           </div>
-          <div class="segítség8 segítség hidden">
-            <button class="close-segítség8 close-segítség">&times;</button>
+          <div class="segítség14 segítség hidden">
+            <button class="close-segítség14 close-segítség">&times;</button>
             <h1>Segítség 2</h1>
-            <p class="modalleír">Keresd a IV. Bélához köthető személyeket.</p>
+            <p class="modalleír">Nézd meg egy térképen, hogy melyik település található a Vág és a Belá torkolatánál.</p>
           </div>
-          <div class="segítség9 segítség hidden">
-            <button class="close-segítség9 close-segítség">&times;</button>
+          <div class="segítség15 segítség hidden">
+            <button class="close-segítség15 close-segítség">&times;</button>
             <h1>Segítség 3</h1>
-            <p class="modalleír">Használd az első feladatnál megadott kódokat!</p>
+            <p class="modalleír">A megfejtés Liptóújvár</p>
           </div>
 
     </div>
@@ -509,6 +519,129 @@
   </div>
 </div>  
 
+
+
+<div class="hatodik hidden">
+          
+  <div class="feladat6">
+      <div class="szöveg6">
+          <p>
+            Kellemes hely Liptóújvár. Jó lenne pár napig itt maradni, vadászgatni, lakmározni. Csak hát ezek a mongol barbárok nem akarnak leszakadni Béláról, Batu kán megmondta, el kell fogni! Újra útra kell kelni, mondjátok meg ti, hogy merre menjen a király!
+          </p>
+          <div class="learning">
+            <iframe src="https://learningapps.org/watch?v=pwkh23m0v21" style="border:0px;width:100%;height:670px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+          <div class="kulcs">
+            <button class="btn-kulcs btn-segítség">Kulcs a rejtvényhez</button>
+            <div class="kulcskép hidden">
+              <button class="close-kulcskép close-segítség">&times;</button>
+              <img src="kulcs.jpg" alt="">
+            </div>
+         </div>
+        </div>
+
+        
+        <div class="kiadások">
+          <p>
+            3 + (3 - 2 - 2 - 1) = <br>
+            (5 - 3 - 4 - 3) + 2 = <br>
+            4 - 3 - 6 - 2 = <br>
+            1 - 5 - 9 - 1 = <br>
+            (6 - 7 - 1 - 2) - 3 = <br>
+            (2 - 4 - 3 - 3) - 1 = <br>
+            <br>
+            _8°5_'0_.7"N _8°46'_2._"E
+          </p>
+
+        </div>
+
+
+
+        <div class="feladatmegold">
+
+          <div class="megoldás6">
+            <p class="beszéd6">Ide írd a következő települést!</p>
+            <input id="válasz6" type="text" placeholder="Település" />
+            <br>
+            <br>
+            <button
+              class="btn-ellenőrzés-hatodik btn-ellenőrzés"
+            >
+              Ellenőrzés
+            </button>
+            <div class="helyes6 hidden">
+              <p>Helyes megoldás, irány Znióváralja!</p>
+              <button class="btn-tovább-hatodik btn-tovább">Tovább</button>
+            </div>
+              
+              <div class="helytelen6 hidden">
+                <p>Egyelőre nem sikerült megfejteni a következő állomást!</p>
+              </div>
+            </div>
+        </div>
+        
+  
+        
+        <!-- <div>
+          <button class="show-modal">Merre jár a király?</button>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <img class="királyikép" src="térkép.png" alt="" />
+          </div> -->
+          
+
+  </div>
+    
+        <div class="segítségbox">
+          <button class="btn-segítség16 btn-segítség">Segítség 1</button>
+          <button class="btn-segítség17 btn-segítség">Segítség 2</button>
+          <button class="btn-segítség18 btn-segítség">Segítség 3</button>
+          <div class="segítség16 segítség hidden">
+            <button class="close-segítség16 close-segítség">&times;</button>
+            <h1>Segítség 1</h1>
+            <p class="modalleír">A keresztrejtvény megfejtése: merrejárakirály</p>
+          </div>
+          <div class="segítség17 segítség hidden">
+            <button class="close-segítség17 close-segítség">&times;</button>
+            <h1>Segítség 2</h1>
+            <p class="modalleír">3 - 2 - 2 - 1 => A 3. feladat merre jár a király szövegének 2. sorának, 2. szavának (1 szó = 2 szóköz közötti karakterek) 1. karaktere: 1</p>
+          </div>
+          <div class="segítség18 segítség hidden">
+            <button class="close-segítség18 close-segítség">&times;</button>
+            <h1>Segítség 3</h1>
+            <p class="modalleír">A koordinátából hiányzó számok: 4, 8, 6, 1, 2, 2. Egészítsd ki a koordinátát és keress rá a Google-ben!</p>
+          </div>
+
+    </div>
+    
+    
+    <div class="overlay hidden"></div>
+    
+  
+
+     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+
+<div class="vége hidden">
+  <h1>
+    Vége a játéknak!
+  </h1>
+  <h2>
+    A király elérte Znió várát. A krónikák szerint itt tartotta első nagyobb pihenőjét a Muhi csata után, a Fargáchok ősi várában. Innen Nyitrára, aztán Pozsonyba ment. Majd Babenberg Frigyes osztrák herceg meghívására Haimburgba érkezett, ahol "kedves" rokona 3 magyar vármegyét zsarolt ki a szorult helyzetben lévő királytól (Pozsony, Sopron, Vas), plusz ráadásként Béla feleségének összes aranyát, ezüstjét, drágaságait. Haimburg után Zágráb következett, majd végül Trau várában talált menedékre a király és családja. A tatárok 1242-ben váratlanul kivonultak Magyarországról, IV. Béla pedig visszatért, és újjáépítette az országot.
+  </h2>
+  <br>
+  <img src="menekülés.jpg" alt="">
+</div>  
+
+<footer class="footer">
+  Weboldalt készítette: Csordás Gábor 2021
+</footer>
 
 
 <audio id="murany1" src="murany1.mp3">

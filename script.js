@@ -478,7 +478,7 @@ document
     if (válasz4 === megoldás4) {
       document.querySelector(".helyes4").classList.remove("hidden");
       document.querySelector(".helytelen4").classList.add("hidden");
-      document.getElementById("idősorkep").src = "idősormegold.JPG";
+      document.getElementById("idősorkep").src = "idősormegold.jpg";
       murany2.play();
       document.querySelector(".megoldás42").classList.remove("hidden");
     } else {

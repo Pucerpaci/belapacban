@@ -54,7 +54,7 @@ document
     document.querySelector(".merrekirályleír").textContent =
       "Murány várát mint királyi védvárat a 13. században a Murányi-fennsík peremén 935 m magasságban található Cigánka nevű kőszirtre építették. A 16. század első felében Bacsó Mátyás rablólovag kezére jutott, akit 1549-ben kivégeztek. A legnagyobb fellendülését a szépségének köszönhetően Murányi Vénusznak elnevezett Széchy Mária élete alatt érte el. A várat abban az időben fényűzően átalakították és falai között a magyar nemesség élénk társadalmi életet folytatott. Sőt a gyönyörű és bátor Mária I. Leopold király ellen is védte a várat azonban ő sem tudta megakadályozni annak elfoglalását 1670-ben. 1702-ben a vár leégett és csak részben volt kényszerhelyzetben felújítva. A 18. században a vár kétszer kiégett és a 18. század végén már lakatlan volt. Murány vára jelenleg várrom - fennmaradt területtel és bejárati toronnyal. A vár-együttes 360 és 96 m kiterjedésű területet foglal el. Fennmaradt a gótikus palota alapzata, a körfal- és néhány melléképület-maradvány. A legjobb állapotban a tornyos bejárati kapu található.";
     document.querySelector(".merrecím").textContent = "Murány vára";
-    document.getElementById("merrekép").src = "murány2.JPG";
+    document.getElementById("merrekép").src = "murány2.jpg";
     murany1.play();
   });
 
@@ -478,7 +478,7 @@ document
     if (válasz4 === megoldás4) {
       document.querySelector(".helyes4").classList.remove("hidden");
       document.querySelector(".helytelen4").classList.add("hidden");
-      document.getElementById("idősorkep").src = "idősormegold.JPG";
+      document.getElementById("idősorkep").src = "idősormegold.jpg";
       murany2.play();
       document.querySelector(".megoldás42").classList.remove("hidden");
     } else {
